@@ -1,0 +1,32 @@
+.container {
+  width: 600px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 10px 10px 10px rgba(112, 112, 122, 0.2);
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.innerContainer {
+  width: 97%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nameContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  font-weight: bold;
+}

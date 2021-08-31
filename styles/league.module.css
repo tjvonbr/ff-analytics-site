@@ -1,0 +1,29 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+}
+
+.leagueName {
+  color: red;
+}
+
+.sidebar {
+  background-color: blue;
+  grid-area: sidebar;
+}
+
+.main {
+  background-color: coral;
+}
+
+.navigation {
+  grid-area: nav;
+}
