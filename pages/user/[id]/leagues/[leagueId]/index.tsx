@@ -20,14 +20,16 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Dashboard: NextPage = ({ league }) => {
+const Dashboard: NextPage = ({ league }: any) => {
+  console.log(league);
   return (
     <div className={styles.container}>
-      <nav className={styles.navigation}>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </nav>
+      <div className={styles.navigation}>
+        <h1>{league.name}</h1>
+        <h3>
+          {league.season} {`${league.total_rosters}-Team Keeper League`}
+        </h3>
+      </div>
       <main>Main</main>
       <div className={styles.sidebar}>Sidebar</div>
       <div className={styles.main}>Content 1</div>
