@@ -1,4 +1,5 @@
 import { NextPage, GetServerSideProps } from "next";
+import DashboardWidget from "../../../../../components/DashboardWidget/index";
 import Link from "next/Link";
 import axios from "axios";
 import styles from "../../../../../styles/league.module.css";
@@ -30,11 +31,8 @@ const Dashboard: NextPage = ({ league }: any) => {
           {league.season} {`${league.total_rosters}-Team Keeper League`}
         </h3>
       </div>
-      <main>Main</main>
       <div className={styles.sidebar}>Sidebar</div>
-      <div className={styles.main}>Content 1</div>
-      <div className={styles.main}>Content 2</div>
-      <div className={styles.main}>Content 3</div>
+      <DashboardWidget />
       <footer>Footer</footer>
     </div>
   );
