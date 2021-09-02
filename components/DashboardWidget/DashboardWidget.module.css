@@ -1,0 +1,6 @@
+.container {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 1px 1px 12px rgba(112, 112, 122, 0.2);
+  grid-area: main;
+}
