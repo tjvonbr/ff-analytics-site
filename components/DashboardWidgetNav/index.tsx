@@ -2,22 +2,23 @@ import DashboardWidgetNavBtn from "../DashboardWidgetNavBtn";
 import styles from "./DashboardWidgetNav.module.css";
 
 export enum DisplayType {
-  MATCHUP = "Matchup",
-  TEAM = "Team",
+  MATCHUPS = "Matchups",
+  ROSTERS = "Rosters",
   PLAYERS = "Players",
   TRENDING = "Trending",
+  RECORDS = "Records",
 }
 
 const dashboardNavDirectory = [
   {
     key: 0,
     text: "Matchup",
-    type: DisplayType.MATCHUP,
+    type: DisplayType.MATCHUPS,
   },
   {
     key: 1,
     text: "Team",
-    type: DisplayType.TEAM,
+    type: DisplayType.ROSTERS,
   },
   {
     key: 2,
@@ -28,6 +29,11 @@ const dashboardNavDirectory = [
     key: 3,
     text: "Trending",
     type: DisplayType.TRENDING,
+  },
+  {
+    key: 4,
+    text: "Records",
+    type: DisplayType.RECORDS,
   },
 ];
 

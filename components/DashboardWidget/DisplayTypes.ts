@@ -1,6 +1,7 @@
 export enum DisplayType {
-  MATCHUP = "Matchup",
-  TEAM = "Team",
+  MATCHUPS = "Matchups",
+  ROSTERS = "Rosters",
   PLAYERS = "Players",
   TRENDING = "Trending",
+  RECORDS = "Records",
 }

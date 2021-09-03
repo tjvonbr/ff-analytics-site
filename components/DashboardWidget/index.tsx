@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DashboardContent from "../dashboard/DashboardContent";
 import DashboardWidgetNav from "../DashboardWidgetNav";
 import { DisplayType } from "../DashboardWidgetNav";
 import styles from "./DashboardWidget.module.css";
@@ -12,6 +13,7 @@ const DashboardWidget = () => {
         selectedDisplay={selectedDisplay}
         setSelectedDisplay={setSelectedDisplay}
       />
+      <DashboardContent selectedDisplay={selectedDisplay} />
     </div>
   );
 };

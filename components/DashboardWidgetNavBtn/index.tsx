@@ -26,6 +26,11 @@ const DashboardWidgetNavBtn = ({
       >
         {display.type}
       </p>
+      <div
+        className={`${styles.selectedUnderline} ${
+          selectedDisplay === display.type ? styles.selected : null
+        }`}
+      />
     </div>
   );
 };
