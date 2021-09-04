@@ -14,9 +14,7 @@ const DashboardWidgetNavBtn = ({
 }: WidgetNavBtn) => {
   return (
     <div
-      className={`${styles.container} ${
-        selectedDisplay === display.type ? styles.selected : null
-      }`}
+      className={styles.container}
       onClick={() => setSelectedDisplay(display.type)}
     >
       <p

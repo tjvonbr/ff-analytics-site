@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import DashboardContent from "../dashboard/DashboardContent";
+import DashboardContent from "../DashboardContent/DashboardContent";
 import DashboardWidgetNav from "../DashboardWidgetNav";
 import { DisplayType } from "../DashboardWidgetNav";
 import styles from "./DashboardWidget.module.css";
 
-const DashboardWidget = () => {
-  const [selectedDisplay, setSelectedDisplay] = useState(DisplayType.MATCHUP);
+const DashboardWidget = ({ matchups }: any) => {
+  const [selectedDisplay, setSelectedDisplay] = useState(DisplayType.MATCHUPS);
 
   return (
     <div className={styles.container}>
@@ -13,7 +13,7 @@ const DashboardWidget = () => {
         selectedDisplay={selectedDisplay}
         setSelectedDisplay={setSelectedDisplay}
       />
-      <DashboardContent selectedDisplay={selectedDisplay} />
+      <DashboardContent selectedDisplay={selectedDisplay} matchups={matchups} />
     </div>
   );
 };
