@@ -13,16 +13,13 @@
   transform: translateY(-2px);
 }
 
-.container.selected {
-  /* background-color: black; */
-}
-
 .text {
   font-size: 0.9rem;
   color: rgb(60, 66, 87);
 }
 
 .text.selectedText {
+  font-weight: bold;
   color: rgb(84, 105, 212);
 }
 

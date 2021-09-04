@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamContainer {
+  width: 90%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.teamName {
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.highestScorer {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.currentScoreContainer {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentScore {
+  width: 10%;
+  font-weight: bold;
+}
